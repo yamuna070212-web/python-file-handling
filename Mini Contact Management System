@@ -1,0 +1,26 @@
+file = open("contacts.txt", "a")
+
+name = input("Enter Name: ")
+phone = input("Enter Phone Number: ")
+
+file.write(name + " : " + phone + "\n")
+
+file.close()
+
+print("Contact Saved Successfully")
+
+print("\nStored Contacts:")
+
+file = open("contacts.txt", "r")
+
+print(file.read())
+
+file.close()
+Sample Input
+Enter Name: Ram
+Enter Phone Number: 9876543210
+Output
+Contact Saved Successfully
+
+Stored Contacts:
+Ram : 9876543210
