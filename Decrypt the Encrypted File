@@ -1,0 +1,17 @@
+file = open("encrypted.txt", "r")
+
+text = file.read()
+
+file.close()
+
+decrypted = ""
+
+for ch in text:
+    decrypted += chr(ord(ch) - 2)
+
+print(decrypted)
+Output
+Python is easy.
+Python is powerful.
+File handling is important.
+Welcome to Python.
