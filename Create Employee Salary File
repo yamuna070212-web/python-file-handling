@@ -1,0 +1,11 @@
+file = open("employee.txt", "w")
+
+file.write("Ram 35000\n")
+file.write("Asha 45000\n")
+file.write("John 30000\n")
+
+file.close()
+
+print("Employee file created.")
+Output
+Employee file created.
