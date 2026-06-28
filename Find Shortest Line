@@ -1,0 +1,11 @@
+file = open("sample.txt", "r")
+
+lines = file.readlines()
+
+shortest = min(lines, key=len)
+
+print(shortest.strip())
+
+file.close()
+Output
+Python is easy.
