@@ -1,0 +1,14 @@
+count = 0
+
+for line in file:
+
+    name, salary = line.split()
+
+    total += int(salary)
+    count += 1
+
+file.close()
+
+print("Average Salary =", total / count)
+Output
+Average Salary = 36666.666666666664
