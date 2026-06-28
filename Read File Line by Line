@@ -1,0 +1,11 @@
+file = open("sample.txt", "r")
+
+for line in file:
+    print(line.strip())
+
+file.close()
+Output
+Python is easy.
+Python is powerful.
+File handling is important.
+Welcome to Python.
