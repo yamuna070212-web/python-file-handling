@@ -1,0 +1,19 @@
+file = open("students.txt", "r")
+
+highest = 0
+topper = ""
+
+for line in file:
+    name, marks = line.split()
+
+    if int(marks) > highest:
+        highest = int(marks)
+        topper = name
+
+file.close()
+
+print("Topper =", topper)
+print("Marks =", highest)
+Output
+Topper = Asha
+Marks = 92
