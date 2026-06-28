@@ -1,0 +1,16 @@
+numbers = []
+
+for line in file:
+
+    words = line.split()
+
+    for word in words:
+
+        if word.isdigit():
+            numbers.append(int(word))
+
+file.close()
+
+print(numbers)
+Output
+[10, 20, 30, 40]
