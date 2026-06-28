@@ -1,0 +1,9 @@
+import os
+
+filename = "sample.txt"
+
+size = os.path.getsize(filename)
+
+print("File Size =", size, "bytes")
+Output
+File Size = 70 bytes
