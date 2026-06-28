@@ -1,0 +1,15 @@
+import os
+
+path = "."
+
+files = os.listdir(path)
+
+count = 0
+
+for file in files:
+    if os.path.isfile(file):
+        count += 1
+
+print("Total Files =", count)
+Output
+Total Files = 8
