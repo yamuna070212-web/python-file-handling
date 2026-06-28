@@ -1,0 +1,12 @@
+file = open("sample.txt", "r")
+
+text = file.read()
+
+print(text[::-1])
+
+file.close()
+Output
+.nohtyP ot emocleW
+.tnatropmi si gnildnah eliF
+.lufrewop si nohtyP
+.ysae si nohtyP
