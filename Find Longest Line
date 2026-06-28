@@ -1,0 +1,11 @@
+file = open("sample.txt", "r")
+
+lines = file.readlines()
+
+longest = max(lines, key=len)
+
+print(longest.strip())
+
+file.close()
+Output
+File handling is important.
