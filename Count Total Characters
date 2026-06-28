@@ -1,0 +1,9 @@
+file = open("sample.txt", "r")
+
+text = file.read()
+
+print("Total Characters =", len(text))
+
+file.close()
+Output
+Total Characters = 70
