@@ -1,0 +1,12 @@
+file = open("sample.txt", "r")
+
+count = 0
+
+for line in file:
+    count += 1
+
+print("Total Lines =", count)
+
+file.close()
+Output
+Total Lines = 4
