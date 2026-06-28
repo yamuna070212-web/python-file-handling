@@ -1,0 +1,15 @@
+lines = file.readlines()
+
+file.close()
+
+unique = list(set(lines))
+
+file = open("unique.txt", "w")
+
+file.writelines(unique)
+
+file.close()
+
+print("Duplicate lines removed.")
+Output
+Duplicate lines removed.
