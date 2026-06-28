@@ -1,0 +1,12 @@
+file = open("sample.txt", "r")
+
+content = file.read()
+
+print(content)
+
+file.close()
+Output
+Python is easy.
+Python is powerful.
+File handling is important.
+Welcome to Python.
