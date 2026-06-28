@@ -1,0 +1,20 @@
+name = input("Enter student name: ")
+
+file = open("students.txt", "r")
+
+found = False
+
+for line in file:
+
+    if line.startswith(name):
+        print(line.strip())
+        found = True
+
+if not found:
+    print("Student Not Found")
+
+file.close()
+Sample Input
+Ram
+Output
+Ram 85
