@@ -1,0 +1,9 @@
+file = open("sample.txt", "a")
+
+file.write("\nPython supports file handling.")
+
+file.close()
+
+print("Text appended successfully.")
+Output
+Text appended successfully.
