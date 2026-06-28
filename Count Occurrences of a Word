@@ -1,0 +1,13 @@
+word = input("Enter word: ")
+
+file = open("sample.txt", "r")
+
+text = file.read()
+
+print(text.count(word))
+
+file.close()
+Sample Input
+Python
+Output
+3
