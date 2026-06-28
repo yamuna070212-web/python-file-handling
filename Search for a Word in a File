@@ -1,0 +1,14 @@
+word = input("Enter word to search: ")
+
+file = open("sample.txt", "r")
+
+text = file.read()
+
+if word in text:
+    print("Word Found")
+else:
+    print("Word Not Found")
+
+file.close()
+Sample Input
+Python
