@@ -1,0 +1,20 @@
+import os
+
+smallest = ""
+min_size = float("inf")
+
+for file in os.listdir("."):
+
+    if os.path.isfile(file):
+
+        size = os.path.getsize(file)
+
+        if size < min_size:
+            min_size = size
+            smallest = file
+
+print("Smallest File =", smallest)
+print("Size =", min_size, "bytes")
+Output
+Smallest File = employee.txt
+Size = 35 bytes
