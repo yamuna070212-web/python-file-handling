@@ -1,0 +1,15 @@
+file = open("sample.txt", "r")
+
+lines = file.readlines()
+
+file.close()
+
+lines.sort()
+
+for line in lines:
+    print(line.strip())
+Output
+File handling is important.
+Python is easy.
+Python is powerful.
+Welcome to Python.
