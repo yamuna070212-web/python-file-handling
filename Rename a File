@@ -1,0 +1,10 @@
+import os
+
+old_name = "sample.txt"
+new_name = "python_notes.txt"
+
+os.rename(old_name, new_name)
+
+print("File renamed successfully.")
+Output
+File renamed successfully.
