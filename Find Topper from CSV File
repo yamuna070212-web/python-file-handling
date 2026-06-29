@@ -1,0 +1,23 @@
+import csv
+
+with open("students.csv", "r") as file:
+
+    reader = csv.reader(file)
+
+    next(reader)
+
+    highest = 0
+    topper = ""
+
+    for row in reader:
+
+        if int(row[1]) > highest:
+            highest = int(row[1])
+            topper = row[0]
+
+print("Topper =", topper)
+print("Marks =", highest)
+
+Output
+Topper = Asha
+Marks = 92
