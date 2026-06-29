@@ -1,0 +1,7 @@
+with open("binary.dat", "rb") as file:
+
+    data = file.read()
+
+print(data)
+Output
+b'Python Programming'
