@@ -1,0 +1,12 @@
+book = input("Enter Book Name: ")
+
+file = open("library.txt", "a")
+
+file.write(book + "\n")
+
+file.close()
+
+print("Book Added Successfully")
+Output
+Enter Book Name: Python Programming
+Book Added Successfully
