@@ -1,0 +1,23 @@
+balance = 10000
+
+amount = int(input("Enter Withdrawal Amount: "))
+
+if amount <= balance:
+
+    balance -= amount
+
+    file = open("transactions.txt", "a")
+
+    file.write("Withdraw: " + str(amount) + "\n")
+
+    file.close()
+
+    print("Remaining Balance =", balance)
+
+else:
+    print("Insufficient Balance")
+
+
+Sample Output
+Enter Withdrawal Amount: 2500
+Remaining Balance = 7500
