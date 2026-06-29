@@ -1,0 +1,12 @@
+task = input("Enter Task: ")
+
+file = open("todo.txt", "a")
+
+file.write(task + "\n")
+
+file.close()
+
+print("Task Added")
+Output
+Enter Task: Learn Python
+Task Added
