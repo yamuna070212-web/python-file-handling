@@ -1,0 +1,19 @@
+import os
+import hashlib
+
+hashes = {}
+
+for file in os.listdir("."):
+
+    if os.path.isfile(file):
+
+        with open(file, "rb") as f:
+            file_hash = hashlib.md5(f.read()).hexdigest()
+
+        if file_hash in hashes:
+            print("Duplicate:", file, "and", hashes[file_hash])
+        else:
+            hashes[file_hash] = file
+
+Output
+Duplicate: copy.txt and sample.txt
