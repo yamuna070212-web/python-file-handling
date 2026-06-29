@@ -1,0 +1,9 @@
+with open("sample.txt", "r") as file:
+
+    words = file.read().split()
+
+total = sum(len(word) for word in words)
+
+print("Average Length =", total / len(words))
+Output
+Average Length = 5.38
