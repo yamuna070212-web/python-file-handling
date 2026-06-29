@@ -1,0 +1,19 @@
+with open("sample.txt", "r") as file:
+
+    lines = file.readlines()
+
+duplicates = set()
+
+seen = set()
+
+for line in lines:
+
+    if line in seen:
+        duplicates.add(line.strip())
+    else:
+        seen.add(line)
+
+print(duplicates)
+
+Output
+set()
