@@ -1,0 +1,11 @@
+file = open("sample.txt", "r")
+
+for i, line in enumerate(file, start=1):
+    print(i, line.strip())
+
+file.close()
+Output
+1 Python is easy.
+2 Python is powerful.
+3 File handling is important.
+4 Welcome to Python.
