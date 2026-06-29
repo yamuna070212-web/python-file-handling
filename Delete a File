@@ -1,0 +1,11 @@
+import os
+
+filename = "test.txt"
+
+if os.path.exists(filename):
+    os.remove(filename)
+    print("File Deleted")
+else:
+    print("File Not Found")
+Output
+File Deleted
