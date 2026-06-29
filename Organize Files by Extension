@@ -1,0 +1,21 @@
+import os
+import shutil
+
+for file in os.listdir("."):
+
+    if os.path.isfile(file):
+
+        ext = os.path.splitext(file)[1]
+
+        if ext:
+
+            folder = ext[1:] + "_files"
+
+            os.makedirs(folder, exist_ok=True)
+
+            shutil.move(file, os.path.join(folder, file))
+
+print("Files organized successfully.")
+
+Output
+Files organized successfully.
