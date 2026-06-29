@@ -1,0 +1,9 @@
+import pickle
+
+with open("students.dat", "rb") as file:
+
+    data = pickle.load(file)
+
+print(data)
+Output
+['Ram', 'Asha', 'John']
