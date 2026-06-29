@@ -1,0 +1,10 @@
+import pickle
+
+students = ["Ram", "Asha", "John"]
+
+with open("students.dat", "wb") as file:
+    pickle.dump(students, file)
+
+print("Data stored successfully.")
+Output
+Data stored successfully.
