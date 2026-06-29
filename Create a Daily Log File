@@ -1,0 +1,13 @@
+from datetime import datetime
+
+today = datetime.now().strftime("%Y-%m-%d")
+
+filename = today + ".log"
+
+with open(filename, "a") as file:
+
+    file.write("Program executed successfully.\n")
+
+print("Log file created.")
+Output
+Log file created.
