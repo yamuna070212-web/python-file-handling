@@ -1,0 +1,6 @@
+import zipfile
+
+with zipfile.ZipFile("backup.zip", "r") as zipf:
+    print(zipf.namelist())
+Output
+['sample.txt']
