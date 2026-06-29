@@ -1,0 +1,9 @@
+with open("sample.txt", "r") as file:
+
+    text = file.read()
+
+count = text.count(" ")
+
+print("Spaces =", count)
+Output
+Spaces = 9
