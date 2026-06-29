@@ -1,0 +1,8 @@
+data = b"Python Programming"
+
+with open("binary.dat", "wb") as file:
+    file.write(data)
+
+print("Binary file written successfully.")
+Output
+Binary file written successfully.
