@@ -1,0 +1,10 @@
+import hashlib
+
+with open("sample.txt", "rb") as file:
+    data = file.read()
+
+sha = hashlib.sha256(data).hexdigest()
+
+print(sha)
+Output
+9f86d081884c7d659a2feaa0c55ad015...
