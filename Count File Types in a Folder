@@ -1,0 +1,15 @@
+import os
+
+types = {}
+
+for file in os.listdir("."):
+
+    if os.path.isfile(file):
+
+        ext = os.path.splitext(file)[1]
+
+        types[ext] = types.get(ext, 0) + 1
+
+print(types)
+Output
+{'.py': 3, '.txt': 6, '.csv': 1, '.json': 1}
