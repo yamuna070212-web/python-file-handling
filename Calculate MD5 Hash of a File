@@ -1,0 +1,11 @@
+import hashlib
+
+with open("sample.txt", "rb") as file:
+    data = file.read()
+
+md5 = hashlib.md5(data).hexdigest()
+
+print(md5)
+Output
+5d41402abc4b2a76b9719d911017c592
+Note: The hash value depends on the actual contents of sample.txt.
