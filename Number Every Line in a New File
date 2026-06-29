@@ -1,0 +1,11 @@
+with open("sample.txt", "r") as source:
+
+    with open("numbered.txt", "w") as destination:
+
+        for i, line in enumerate(source, start=1):
+
+            destination.write(f"{i}. {line}")
+            
+print("Numbered file created.")
+Output
+Numbered file created.
