@@ -13,3 +13,9 @@ file.close()
 print("Uppercase file created.")
 Output
 Uppercase file created.
+uppercase.txt
+
+PYTHON IS EASY.
+PYTHON IS POWERFUL.
+FILE HANDLING IS IMPORTANT.
+WELCOME TO PYTHON.
