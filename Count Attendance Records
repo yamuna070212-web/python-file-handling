@@ -1,0 +1,9 @@
+file = open("attendance.txt", "r")
+
+count = len(file.readlines())
+
+file.close()
+
+print("Total Attendance Records =", count)
+Output
+Total Attendance Records = 10
