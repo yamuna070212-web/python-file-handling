@@ -1,0 +1,15 @@
+import os
+
+extensions = {}
+
+for file in os.listdir("."):
+
+    if os.path.isfile(file):
+
+        ext = os.path.splitext(file)[1]
+
+        extensions[ext] = extensions.get(ext, 0) + 1
+
+print(extensions)
+Output
+{'.py': 5, '.txt': 8, '.csv': 1, '.json': 1}
