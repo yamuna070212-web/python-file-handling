@@ -1,0 +1,25 @@
+file = open("expenses.txt", "a")
+
+item = input("Enter Item: ")
+amount = float(input("Enter Amount: "))
+
+file.write(item + "," + str(amount) + "\n")
+
+file.close()
+
+total = 0
+
+file = open("expenses.txt", "r")
+
+for line in file:
+    item, amount = line.strip().split(",")
+    total += float(amount)
+
+
+file.close()
+
+print("Total Expense =", total)
+Sample Output
+Enter Item: Food
+Enter Amount: 250
+Total Expense = 250.0
