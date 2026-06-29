@@ -1,0 +1,16 @@
+import csv
+
+data = [
+    ["Name", "Marks"],
+    ["Ram", 85],
+    ["Asha", 92],
+    ["John", 78]
+]
+
+with open("students.csv", "w", newline="") as file:
+    writer = csv.writer(file)
+    writer.writerows(data)
+
+print("CSV file created successfully.")
+Output
+CSV file created successfully.
