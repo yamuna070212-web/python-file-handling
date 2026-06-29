@@ -1,0 +1,12 @@
+name = input("Student Name: ")
+
+file = open("attendance.txt", "a")
+
+file.write(name + " Present\n")
+
+file.close()
+
+print("Attendance Recorded")
+Output
+Student Name: Ram
+Attendance Recorded
