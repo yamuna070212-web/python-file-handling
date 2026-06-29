@@ -1,0 +1,10 @@
+import os
+
+filename = "students.txt"
+
+if os.path.exists(filename):
+    print("File Exists")
+else:
+    print("File Does Not Exist")
+Output
+File Exists
