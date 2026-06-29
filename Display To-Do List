@@ -1,0 +1,13 @@
+file = open("todo.txt", "r")
+
+print("To-Do List")
+
+for task in file:
+    print(task.strip())
+
+file.close()
+Output
+To-Do List
+Learn Python
+Practice File Handling
+Upload to GitHub
