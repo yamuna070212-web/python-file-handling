@@ -1,0 +1,15 @@
+import string
+
+with open("sample.txt", "r") as file:
+
+    text = file.read()
+
+for ch in string.punctuation:
+    text = text.replace(ch, "")
+
+print(text)
+Output
+Python is easy
+Python is powerful
+File handling is important
+Welcome to Python
