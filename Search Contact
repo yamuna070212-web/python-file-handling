@@ -1,0 +1,21 @@
+name = input("Enter Name: ")
+
+file = open("contacts.txt", "r")
+
+found = False
+
+for line in file:
+
+    n, p = line.strip().split(",")
+
+    if n.lower() == name.lower():
+        print("Phone =", p)
+        found = True
+
+if not found:
+    print("Contact Not Found")
+
+file.close()
+Output
+Enter Name: Ram
+Phone = 9876543210
