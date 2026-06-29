@@ -1,0 +1,9 @@
+with open("sample.txt", "r") as source:
+
+    with open("backup.txt", "w") as destination:
+
+        destination.write(source.read())
+
+print("Backup created successfully.")
+Output
+Backup created successfully.
