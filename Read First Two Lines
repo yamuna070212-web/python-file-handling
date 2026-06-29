@@ -1,0 +1,9 @@
+file = open("sample.txt", "r")
+
+print(file.readline().strip())
+print(file.readline().strip())
+
+file.close()
+Output
+Python is easy.
+Python is powerful.
