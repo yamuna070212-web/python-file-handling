@@ -1,0 +1,9 @@
+with open("sample.txt", "r") as file:
+
+    text = file.read()
+
+paragraphs = [p for p in text.split("\n\n") if p.strip()]
+
+print("Paragraphs =", len(paragraphs))
+Output
+Paragraphs = 1
