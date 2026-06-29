@@ -1,0 +1,15 @@
+import os
+
+word = "Python"
+
+for file in os.listdir("."):
+
+    if file.endswith(".txt"):
+
+        with open(file, "r") as f:
+
+            if word in f.read():
+                print(word, "found in", file)
+Output
+Python found in sample.txt
+Python found in notes.txt
