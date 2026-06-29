@@ -1,0 +1,22 @@
+file = open("sample.txt", "r")
+
+text = file.read()
+
+file.close()
+
+file = open("lowercase.txt", "w")
+
+file.write(text.lower())
+
+file.close()
+
+print("Lowercase file created.")
+Output
+Lowercase file created.
+
+lowercase.txt
+
+python is easy.
+python is powerful.
+file handling is important.
+welcome to python.
