@@ -1,0 +1,16 @@
+import os
+
+total = 0
+
+for root, dirs, files in os.walk("."):
+
+    for file in files:
+
+        path = os.path.join(root, file)
+
+        total += os.path.getsize(path)
+
+print("Folder Size =", total, "bytes")
+
+Output
+Folder Size = 25480 bytes
