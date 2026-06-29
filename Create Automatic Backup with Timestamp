@@ -1,0 +1,12 @@
+import shutil
+from datetime import datetime
+
+timestamp = datetime.now().strftime("%H%M%S")
+
+backup = "backup_" + timestamp + ".txt"
+
+shutil.copy("sample.txt", backup)
+
+print("Backup Created:", backup)
+Output
+Backup Created: backup_143520.txt
