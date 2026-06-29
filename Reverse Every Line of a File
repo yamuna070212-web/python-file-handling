@@ -1,0 +1,9 @@
+with open("sample.txt", "r") as file:
+
+    for line in file:
+        print(line.strip()[::-1])
+Output
+.ysae si nohtyP
+.lufrewop si nohtyP
+.tnatropmi si gnildnah eliF
+.nohtyP ot emocleW
