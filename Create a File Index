@@ -1,0 +1,11 @@
+import os
+
+with open("index.txt", "w") as file:
+
+    for item in os.listdir("."):
+
+        file.write(item + "\n")
+
+print("Index created.")
+Output
+Index created.
