@@ -1,0 +1,14 @@
+import json
+
+student = {
+    "Name": "Ram",
+    "Marks": 90,
+    "Branch": "CSE"
+}
+
+with open("student.json", "w") as file:
+    json.dump(student, file, indent=4)
+
+print("JSON file created.")
+Output
+JSON file created.
