@@ -1,0 +1,13 @@
+import os
+
+extension = ".txt"
+
+count = 0
+
+for file in os.listdir("."):
+    if file.endswith(extension):
+        count += 1
+
+print("Total .txt files =", count)
+Output
+Total .txt files = 5
