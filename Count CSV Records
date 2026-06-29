@@ -1,0 +1,16 @@
+import csv
+
+count = 0
+
+with open("students.csv", "r") as file:
+
+    reader = csv.reader(file)
+
+    next(reader)
+
+    for row in reader:
+        count += 1
+
+print("Total Records =", count)
+Output
+Total Records = 3
