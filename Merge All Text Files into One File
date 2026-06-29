@@ -1,0 +1,16 @@
+import os
+
+with open("all_files.txt", "w") as output:
+
+    for file in os.listdir("."):
+
+        if file.endswith(".txt"):
+
+            with open(file, "r") as f:
+
+                output.write(f.read())
+                output.write("\n")
+
+print("All text files merged.")
+Output
+All text files merged.
