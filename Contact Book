@@ -1,0 +1,14 @@
+file = open("contacts.txt", "a")
+
+name = input("Name: ")
+phone = input("Phone: ")
+
+file.write(name + "," + phone + "\n")
+
+file.close()
+
+print("Contact Saved")
+Output
+Name: Ram
+Phone: 9876543210
+Contact Saved
