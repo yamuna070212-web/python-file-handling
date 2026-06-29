@@ -1,0 +1,13 @@
+file = open("library.txt", "r")
+
+print("Books Available")
+
+for line in file:
+    print(line.strip())
+
+file.close()
+Output
+Books Available
+Python Programming
+Data Structures
+Operating Systems
