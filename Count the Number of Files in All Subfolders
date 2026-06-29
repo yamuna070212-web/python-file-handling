@@ -1,0 +1,10 @@
+import os
+
+count = 0
+
+for root, dirs, files in os.walk("."):
+    count += len(files)
+
+print("Total Files =", count)
+Output
+Total Files = 18
