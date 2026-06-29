@@ -1,0 +1,21 @@
+Suppose numbers.txt contains:
+
+Python 123
+Java 456
+C 78
+Program
+file = open("numbers.txt", "r")
+
+text = file.read()
+
+count = 0
+
+for ch in text:
+    if ch.isdigit():
+        count += 1
+
+print("Digits =", count)
+
+file.close()
+Output
+Digits = 8
